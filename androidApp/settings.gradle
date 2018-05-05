@@ -1,0 +1,11 @@
+include ':app'
+
+include ':greeting'
+include ':greeting:common'
+include ':greeting:android'
+include ':greeting:ios'
+
+project(':greeting').projectDir = file('../greeting')
+project(':greeting:common').projectDir = file('../greeting/common')
+project(':greeting:android').projectDir = file('../greeting/android')
+project(':greeting:ios').projectDir = file('../greeting/ios')
